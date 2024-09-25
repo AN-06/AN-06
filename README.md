@@ -1,6 +1,6 @@
 ## Welcome to My GitHub Profile
 
-- 👋 Hi, I’m @AN-06
+- 👋 Hi, I’m Aleena.
 - 👀 I’m interested in coding and technology.
 - 🌱 I’m currently learning new programming languages and frameworks.
 - 😍 I’m looking to collaborate on exciting tech projects.
