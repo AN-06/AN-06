@@ -3,7 +3,7 @@
 - 👋 Hi, I’m @AN-06
 - 👀 I’m interested in coding and technology.
 - 🌱 I’m currently learning new programming languages and frameworks.
-- 😍 I’m looking to collaborate on on exciting tech projects.
+- 😍 I’m looking to collaborate on exciting tech projects.
 
 
 <!---
