@@ -12,9 +12,9 @@ You can click the Preview link to take a look at your changes.
 --->
 ## 👩‍💻 Leetcode badges 
 
-<img src="https://assets.leetcode.com/static_assets/marketing/2024-50.gif" width="65px"></img>
-<img src="https://assets.leetcode.com/static_assets/marketing/2024-100-new.gif" width="65px"></img>
-<img src="https://assets.leetcode.com/static_assets/others/Introduction_to_Pandas.gif" width="65px"></img>
+<img src="https://assets.leetcode.com/static_assets/marketing/2024-50.gif" width="60px"></img>
+<img src="https://assets.leetcode.com/static_assets/marketing/2024-100-new.gif" width="60px"></img>
+<img src="https://assets.leetcode.com/static_assets/others/Introduction_to_Pandas.gif" width="60px"></img>
 
 
 ## 🦖💻 Hacktober badges
