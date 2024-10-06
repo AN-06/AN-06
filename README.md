@@ -1,9 +1,20 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AN-06/AN-06/main/assessts/banner.webp" alt="Banner" width="60%" />
+</p>
+
+
+
+
 ## Welcome to My GitHub Profile
 
-- 👋 Hi, I’m Aleena.
+<p align="center">
+  <img src="https://github.com/AN-06/AN-06/raw/main/assessts/Aleena3.gif" alt="Hi, I'm Aleena!" width="40%"/>
+</p>
+
 - 👀 I’m interested in coding and technology.
 - 🌱 I’m currently learning new programming languages and frameworks.
 - 😍 I’m looking to collaborate on exciting tech projects.
+
 
 
 <!---
