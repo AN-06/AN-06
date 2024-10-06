@@ -1,16 +1,6 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AN-06/AN-06/main/assessts/banner.webp" alt="Banner" width="60%" />
-</p>
-
-
-
-
 ## Welcome to My GitHub Profile
 
-<p align="center">
-  <img src="https://github.com/AN-06/AN-06/raw/main/assessts/Aleena4.gif" alt="Hi, I'm Aleena!" width="40%"/>
-</p>
-
+- 👋 Hi ! I'm Aleena.
 - 👀 I’m interested in coding and technology.
 - 🌱 I’m currently learning new programming languages and frameworks.
 - 😍 I’m looking to collaborate on exciting tech projects.
@@ -31,14 +21,29 @@ You can click the Preview link to take a look at your changes.
 
 ## 📈 My GitHub Stats
 
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=AN-06&show_icons=true&theme=radical)
-
-[![Aleena's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=AN-06&bg_color=0d1117&color=ffffff&line=00ff00&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-
-
+<table>
+<tr>
+   <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=AN-06&show_icons=true&theme=radical" />
+   </td>
+   <td>
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=AN-06&theme=radical" />
+   </td>
+</tr>
+<tr>
+   <td colspan="2">
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=AN-06&bg_color=141321&color=e4e2e2&line=39ff14&point=ffffff&area=true&hide_border=true" />
+   </td>
+</tr>
+</table>
 
 
 ## 🦖💻 Hacktober badges
 
 [![An image of @aleena_67's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/aleena_67)](https://holopin.io/@aleena_67)
+
+
+
+
+
+
