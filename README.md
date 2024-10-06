@@ -8,7 +8,7 @@
 ## Welcome to My GitHub Profile
 
 <p align="center">
-  <img src="https://github.com/AN-06/AN-06/raw/main/assessts/Aleena3.gif" alt="Hi, I'm Aleena!" width="40%"/>
+  <img src="https://github.com/AN-06/AN-06/raw/main/assessts/Aleena4.gif" alt="Hi, I'm Aleena!" width="40%"/>
 </p>
 
 - 👀 I’m interested in coding and technology.
