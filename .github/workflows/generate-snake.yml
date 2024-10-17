@@ -5,12 +5,15 @@ on:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
   workflow_dispatch:
 
+permissions:
+  contents: read  # Ensure proper permissions for the token
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3  # Updated to v3
+        uses: actions/checkout@v3
 
       - name: Generate Snake
         uses: Platane/snk@v3
