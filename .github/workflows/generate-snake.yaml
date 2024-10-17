@@ -1,30 +1,25 @@
-name: Generate GitHub Snake
+name: Generate Snake Chart
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily
-  push:
-    branches:
-      - main  # Adjust to your default branch if different
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:
 
 jobs:
-  generate-snake:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-      - name: Generate GitHub Snake
-        uses: github-snake/github-snake@master
-        with:
-          # Optionally customize snake parameters
-          github_user: AN-06
-
-      - name: Commit and push changes
+      - name: Generate Snake Chart
         run: |
-          git config --local user.email "your-email@example.com"
-          git config --local user.name "GitHub Action"
-          git add output/github-snake.svg
-          git commit -m "Update snake"
-          git push
+          npm install -g @platane/snk
+          npx snk --github_user_name ${{ github.repository_owner }} --outputs dist/github-snake.svg
+
+      - name: Upload Snake Chart
+        uses: actions/upload-artifact@v2
+        with:
+          name: snake-chart
+          path: dist/github-snake.svg
