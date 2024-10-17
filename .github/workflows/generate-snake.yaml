@@ -17,9 +17,9 @@ jobs:
         run: |
           npm install -g @platane/snk
           npx snk --github_user_name ${{ github.repository_owner }} --outputs dist/github-snake.svg
-
+      
       - name: Upload Snake Chart
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3  # Updated to v3
         with:
           name: snake-chart
           path: dist/github-snake.svg
