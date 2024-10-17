@@ -3,37 +3,37 @@ name: Generate Snake
 on:
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
-  workflow_dispatch:
-
-permissions:
-  contents: read  # Ensure proper permissions for the token
+  workflow_dispatch:  # Allows manual trigger of the action
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3  # Use the latest version
 
       - name: Generate Snake
-        uses: Platane/snk@v3
+        uses: Platane/snk@v3.2.0  # Use the latest version available
         with:
-          github_user_name: AN-06
+          github_user_name: ${{ github.repository_owner }}  # Automatically use repo owner's name
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9  # Customize colors
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Ensure the GitHub token is set
 
-      - name: Ensure the generated files exist
+      - name: Ensure Generated Files Exist
         run: |
-          ls dist
-          test -f dist/github-snake.svg
-          test -f dist/github-snake-dark.svg
+          ls dist  # List files in the dist directory
+          test -f dist/github-snake.svg  # Check if the SVG file exists
+          test -f dist/github-snake-dark.svg  # Check if the dark SVG file exists
+          test -f dist/ocean.gif  # Check if the GIF file exists
 
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output
-          build_dir: dist
+          target_branch: output  # Specify the branch for GitHub Pages
+          build_dir: dist  # The directory with the generated files
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token
