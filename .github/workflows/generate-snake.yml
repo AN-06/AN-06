@@ -9,10 +9,21 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2  # Ensure you have the latest version of the repository
+
       - name: Generate Snake
-        uses: Platane/snk@v3
+        uses: Platane/snk@v3  # Use the latest version of the snake generator
         with:
           github_user_name: AN-06  # Replace with your GitHub username
           outputs: |
             output/github-snake.svg
             output/github-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token for authentication
+
+      - name: Ensure the generated files exist
+        run: |
+          ls output  # List files in the output directory
+          test -f output/github-snake.svg  # Check if the SVG file exists
+          test -f output/github-snake-dark.svg  # Check if the dark mode SVG file exists
