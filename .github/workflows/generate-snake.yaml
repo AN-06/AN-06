@@ -1,0 +1,30 @@
+name: Generate GitHub Snake
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily
+  push:
+    branches:
+      - main  # Adjust to your default branch if different
+
+jobs:
+  generate-snake:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Generate GitHub Snake
+        uses: github-snake/github-snake@master
+        with:
+          # Optionally customize snake parameters
+          github_user: AN-06
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "your-email@example.com"
+          git config --local user.name "GitHub Action"
+          git add output/github-snake.svg
+          git commit -m "Update snake"
+          git push
