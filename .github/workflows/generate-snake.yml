@@ -3,25 +3,23 @@ name: Generate Snake
 on:
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
-  workflow_dispatch:  # Allows manual trigger of the action
+  workflow_dispatch:  # Allows manual triggering of the action
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3  # Use the latest version
+        uses: actions/checkout@v3
 
       - name: Generate Snake
-        uses: Platane/snk@v3.2.0  # Use the latest version available
+        uses: Platane/snk@v3
         with:
-          github_user_name: ${{ github.repository_owner }}  # Automatically use repo owner's name
+          github_user_name: ${{ github.repository_owner }}  # Using the repository owner as the user
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9  # Customize colors
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Ensure the GitHub token is set
 
       - name: Ensure Generated Files Exist
         run: |
@@ -34,6 +32,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output  # Specify the branch for GitHub Pages
-          build_dir: dist  # The directory with the generated files
+          build_dir: dist  # The directory containing the generated files
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token for authentication
