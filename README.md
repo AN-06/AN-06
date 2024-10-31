@@ -6,6 +6,8 @@
         
 
 
+
+
 ## Welcome to My GitHub Profile
 
 - 👀 I’m interested in coding and technology.
@@ -18,6 +20,7 @@
 AN-06/AN-06 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+
 ## 👩‍💻 Leetcode badges 
 
 <img src="https://assets.leetcode.com/static_assets/marketing/2024-50.gif" width="65px"></img>
