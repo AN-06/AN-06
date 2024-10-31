@@ -1,6 +1,13 @@
+
+<h1 align="center"> Hi, <img src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif" 
+         alt="Waving hand animated gif"
+         height="45"
+         width="45" /> I'm Aleena !</h1>
+        
+
+
 ## Welcome to My GitHub Profile
 
-- 👋 Hi ! I'm Aleena.
 - 👀 I’m interested in coding and technology.
 - 🌱 I’m currently learning new programming languages and frameworks.
 - 😍 I’m looking to collaborate on exciting tech projects.
