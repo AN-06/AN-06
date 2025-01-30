@@ -40,7 +40,8 @@ You can click the Preview link to take a look at your changes.
       <img src="https://github-readme-stats.vercel.app/api?username=AN-06&show_icons=true&theme=radical" />
    </td>
    <td>
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=AN-06&theme=radical" />
+     <img src="https://github-readme-streak-stats.herokuapp.com/?user=AN-06&theme=radical" alt="Streak Stats" />
+
    </td>
 </tr>
 <tr>
