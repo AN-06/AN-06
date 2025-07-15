@@ -23,10 +23,6 @@ You can click the Preview link to take a look at your changes.
 
 
 
-
-
-
-
 ## 📈 My GitHub Stats
 
 <table>
@@ -38,6 +34,11 @@ You can click the Preview link to take a look at your changes.
      <img src="https://github-readme-streak-stats.herokuapp.com/?user=AN-06&theme=radical" alt="Streak Stats" />
 
    </td>
+</tr>
+<tr>
+    <td colspan="2">
+      <img src="https://github-profile-trophy.vercel.app/?username=AN-06&theme=darkhub&column=9" alt="My GitHub stats">
+    </td>
 </tr>
 <tr>
    <td colspan="2">
